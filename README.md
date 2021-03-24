@@ -1,1 +1,4 @@
-# intro-to-fp-in-scala
+# Introduction to Functional Programming with Scala
+
+![](./docs/imgs/scala.png)
+
