@@ -1,4 +1,4 @@
-package scala
+package scala_examples
 
 object Immutability extends App {
   var mutableVar = 0
