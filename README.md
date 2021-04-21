@@ -1,7 +1,6 @@
 # Practical introduction to Functional Programming (with Scala)
 
-![](./docs/imgs/scala.png)
-
+![](./docs/imgs/scala-logo.jpg)
 In this repo I aim to showcase the different concepts used in Functional Programming compared to Imperative Programming. 
 To do so we'll showcase the differences in code examples and briefly discuss the
 implications.
