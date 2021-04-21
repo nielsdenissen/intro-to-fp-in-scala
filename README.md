@@ -1,6 +1,7 @@
-# Practical introduction to Functional Programming (with Scala)
+# Practical introduction to Functional Programming
 
 ![](./docs/imgs/scala-logo.jpg)
+
 In this repo I aim to showcase the different concepts used in Functional Programming compared to Imperative Programming. 
 To do so we'll showcase the differences in code examples and briefly discuss the
 implications.
@@ -46,6 +47,25 @@ However this is mitigated by the fact that immutable objects can be referenced t
 are immutable and guaranteed not to change). So adding an element to a map could look like this:
 
 ![](docs/imgs/immutability_map_memory_1.png)  ![](docs/imgs/immutability_map_memory_2.png)
+
+## 3. Type system
+Though not strictly related, types are very useful when you're writing a functional program.
+In functional programming you'll often be chaining functions together to compose higher level functions. Types make it 
+lot easier to do so as they make it easy to understand the result of previous functions. Also, the compiler can help you 
+in determining whether the operations you've written are valid.
+
+**Code Example**: Create a list of strings, parse to integers and filter < 10
+
+Untyped ([Python](./python/3_type_system.py)):
+- Flexible
+- Potential type errors at run-time (more need for testing)
+- Slower when reading data as the type needs to be inferred
+
+Typed ([Java](./src/main/java/java_examples/3_type_system.java),
+[Scala](./src/main/scala/scala_examples/3_type_system.scala)):
+- Compile-time validation (less error-prone)
+- Readability and understandability of code (types provide insight in what a function does)
+- More efficient in memory as storage needs are tailored to a type
 
 ## Resources used
 
