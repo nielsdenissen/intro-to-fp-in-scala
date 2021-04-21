@@ -49,10 +49,10 @@ are immutable and guaranteed not to change). So adding an element to a map could
 ![](docs/imgs/immutability_map_memory_1.png)  ![](docs/imgs/immutability_map_memory_2.png)
 
 ## 3. Type system
-Though not strictly related, types are very useful when you're writing a functional program.
-In functional programming you'll often be chaining functions together to compose higher level functions. Types make it 
-lot easier to do so as they make it easy to understand the result of previous functions. Also, the compiler can help you 
-in determining whether the operations you've written are valid.
+Types are very useful when you're writing a functional program. In functional programming you'll often be chaining 
+functions together to compose higher level functions. Types make it lot easier to do so as they make it easy to 
+understand the result of previous functions. Also, the compiler can help you in determining whether the operations 
+you've written are valid.
 
 **Code Example**: Create a list of strings, parse to integers and filter < 10
 
@@ -67,8 +67,32 @@ Typed ([Java](./src/main/java/java_examples/3_type_system.java),
 - Readability and understandability of code (types provide insight in what a function does)
 - More efficient in memory as storage needs are tailored to a type
 
+### 3.1 Type Inference
+
+### 3.2 Pattern Matching
+
+## 4. Functional Composition and First-class Functions
+Every program essentially consists of 2 things: Behavior and Data. In Functional programming, functions make up the 
+behavior of the program. They describe the transformations that need to be done on immutable data in order to achieve 
+the programmers goals.
+
+With Functions being the main building blocks of functional programs, an important concept is functional composition. 
+This is a way to combine functions together to create another function and thus more complex behavior. For this to be 
+possible, functions need to be so-called first-class citizens. This means you can pass functions around the same way 
+you can pass data/objects/variables around in your code.
+
+**Code Examples** (): 
+- Compose a greeting from 2 function.
+  ![Functional Composition](docs/imgs/functional_composition.png)
+  In this example we'll create an ASCII greeting from multiple functions like above.
+  
+- Pass the greeting function as an argument to another function
+- Create division functions by returning a function from a function
+
+
 ## Resources used
 
 - http://luizsol.com/why-functional-programming/
 - https://www.freecodecamp.org/news/imperative-vs-declarative-programming-difference/
+- https://www.freecodecamp.org/news/learn-the-fundamentals-of-functional-programming/
 - Why OOP is bad (or why encapsulation doesn't work): https://www.youtube.com/watch?v=QM1iUe6IofM&ab_channel=BrianWill
