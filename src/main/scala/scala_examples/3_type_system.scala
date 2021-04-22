@@ -9,7 +9,7 @@ object TypeSystem extends App {
   // Filtering the list of integers works fine
   listOfIntegers.filter(i => i < 10).foreach(println)
 
-  // Filtering the list of strings gives a compilation error
-  // TODO: Uncomment code below
-//  listOfStrings.filter(i => i < 10).foreach(println)
+  // Filtering the list of strings does not compile
+  // TODO: uncomment; below code raises a compilation error
+  // listOfStrings.filter(i => i < 10).foreach(println)
 }

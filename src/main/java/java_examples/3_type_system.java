@@ -20,8 +20,8 @@ class TypeSystem {
             }
         }
 
-        // Filtering the list of strings gives a compilation error
-        // TODO: Uncomment code below
+        // Filtering the list of strings does not compile
+        // TODO: uncomment; below code raises a compilation error
 //        for (String item: listOfStrings) {
 //            if (item < 10) {
 //                System.out.println(item);

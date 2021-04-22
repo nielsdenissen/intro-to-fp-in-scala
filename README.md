@@ -81,10 +81,13 @@ This is a way to combine functions together to create another function and thus 
 possible, functions need to be so-called first-class citizens. This means you can pass functions around the same way 
 you can pass data/objects/variables around in your code.
 
-**Code Examples** (): 
-- Compose a greeting from 2 function.
+**Code Examples** ([Python](./python/4_functional_composition.py), 
+[Java](./src/main/java/java_examples/4_functional_composition.java),
+[Scala](./src/main/scala/scala_examples/4_functional_composition.scala)): 
+- Compose a greeting from 2 functions.
   ![Functional Composition](docs/imgs/functional_composition.png)
-  In this example we'll create an ASCII greeting from multiple functions like above.
+  In this example we'll compose a greeting function. In our example we only show the first 2 functions composed. As an
+  exercise you can create an ASCII greeting by adding the last function.
   
 - Pass the greeting function as an argument to another function
 - Create division functions by returning a function from a function
