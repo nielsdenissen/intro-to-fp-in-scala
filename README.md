@@ -39,6 +39,7 @@ Mutable ([Java](./src/main/java/java_examples/2_immutability.java),[Python](./py
 Immutable ([Scala](./src/main/scala/scala_examples/2_immutability.scala)):
 - Objects cannot be altered after creation
 - Supports parallel execution naturally
+- Improves readability of pipeline as it's always clear which values are set
 
 ### Memory management
 Immutability doesn't necessarily mean more memory is used. When for instance adding items to a map, one could think
@@ -84,13 +85,12 @@ you can pass data/objects/variables around in your code.
 **Code Examples** ([Python](./python/4_functional_composition.py), 
 [Java](./src/main/java/java_examples/4_functional_composition.java),
 [Scala](./src/main/scala/scala_examples/4_functional_composition.scala)): 
-- Compose a greeting from 2 functions.
+1.  Compose a greeting from 2 functions.
   ![Functional Composition](docs/imgs/functional_composition.png)
   In this example we'll compose a greeting function. In our example we only show the first 2 functions composed. As an
   exercise you can create an ASCII greeting by adding the last function.
   
-- Pass the greeting function as an argument to another function
-- Create division functions by returning a function from a function
+2. Create divisibleBy functions by returning a function from a function
 
 
 ## Resources used
