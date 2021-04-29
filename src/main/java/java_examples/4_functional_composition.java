@@ -21,10 +21,10 @@ class FunctionComposition {
         System.out.println("\n------------ Part 2 ------------\n");
 
         // First we create a generic divisible_by function
+        // Notice divisibleBy is a function that returns another function
         Function<Integer, Function<Integer, Boolean>> divisibleBy = (y) -> (x) -> Math.floorMod(x, y) == 0;
 
         // We can now create a divisible_by_2 function using divisible_by
-        // Notice divisible_by_2 is another function that returns a function
         Function<Integer, Boolean> divisibleBy2 = divisibleBy.apply(2);
         System.out.println("Result of divisibleBy2.apply(4)=" + divisibleBy2.apply(4));
         System.out.println("Result of divisibleBy2.apply(5)=" + divisibleBy2.apply(5));

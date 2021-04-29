@@ -29,12 +29,12 @@ print("\n------------ Part 2 ------------\n")
 
 
 # First we create a generic divisible_by function
+# Notice divisible_by is a function that returns another function
 def divisible_by(y):
     return lambda x: x % y == 0
 
 
 # We can now create a divisible_by_2 function using divisible_by
-# Notice divisible_by_2 is another function that returns a function
 divisible_by_2 = divisible_by(2)
 print(f"Result of {divisible_by_2(4)=}")
 print(f"Result of {divisible_by_2(5)=}")
