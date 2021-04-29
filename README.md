@@ -14,6 +14,7 @@ these exercises can be found here:
 
 Let's start with the most obvious one and work our way towards more specific examples.
 
+
 ## 1. Declarative vs Imperative Programming
 
 **Code Example**: Filter items longer then 10 characters from a list
@@ -27,6 +28,7 @@ Imperative ([Java](./src/main/java/java_examples/1_declarative_vs_imperative.jav
 Declarative ([Scala](./src/main/scala/scala_examples/1_declarative_vs_imperative.scala)):
 - Specify intention, declare what we want to do
 - More readable code
+
 
 ## 2. Immutability
 
@@ -47,13 +49,18 @@ it takes up more memory since we'd have to create an entirely new map with the e
 However this is mitigated by the fact that immutable objects can be referenced to safely from multiple objects (as they
 are immutable and guaranteed not to change). So adding an element to a map could look like this:
 
-![](docs/imgs/immutability_map_memory_1.png)  ![](docs/imgs/immutability_map_memory_2.png)
+![](docs/imgs/immutability_map_memory_1.png)  
+
+After adding a new element:
+
+![](docs/imgs/immutability_map_memory_2.png)
+
 
 ## 3. Type system
-Types are very useful when you're writing a functional program. In functional programming you'll often be chaining 
-functions together to compose higher level functions. Types make it lot easier to do so as they make it easy to 
-understand the result of previous functions. Also, the compiler can help you in determining whether the operations 
-you've written are valid.
+Types are very useful when you're writing a functional program (or any program for that matter). In functional 
+programming you'll often be chaining functions together to compose higher level functions. Types make it lot easier to 
+do so as they make it easy to understand the result of previous functions. Also, the compiler can help you in 
+determining whether the operations you've written are valid.
 
 **Code Example**: Create a list of strings, parse to integers and filter < 10
 
@@ -63,14 +70,24 @@ Untyped ([Python](./python/3_type_system.py)):
 - Slower when reading data as the type needs to be inferred
 
 Typed ([Java](./src/main/java/java_examples/3_type_system.java),
-[Scala](./src/main/scala/scala_examples/3_type_system.scala)):
+[Scala](src/main/scala/scala_examples/3_0_type_system.scala)):
 - Compile-time validation (less error-prone)
 - Readability and understandability of code (types provide insight in what a function does)
 - More efficient in memory as storage needs are tailored to a type
 
 ### 3.1 Type Inference
+Type inference reduces the amount of boilerplate that can come along with typed languages. In Java for instance, each
+object/variable created needs to have the type explicitly mentioned on definition. In many statically typed functional
+languages, the compiler is able to infer the type of a variable based on how they are created. You can see an example 
+of this in the code examples of this chapter (look at the creation of "listOfStrings" and "listofIntegers" in Java vs 
+Scala).
 
 ### 3.2 Pattern Matching
+Using pattern matching, the compiler tries to fit a variable to a specific expression. It looks a little like a 
+switch-case statement, but it's more powerful than that.
+
+**Code Example**([Scala](./src/main/scala/scala_examples/3_2_pattern_matching.scala)): Calculate the Area of a shape
+
 
 ## 4. Functional Composition and First-class Functions
 Every program essentially consists of 2 things: Behavior and Data. In Functional programming, functions make up the 
