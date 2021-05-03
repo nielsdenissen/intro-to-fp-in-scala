@@ -110,9 +110,47 @@ you can pass data/objects/variables around in your code.
 2. Create divisibleBy functions by returning a function from a function
 
 
+## 5. Functional Programming Concepts - Map, Option, Either
+In this chapter we'll look at some examples of tools available to you in a functional programming language.
+
+- **Map**: Apply a function on each element of a functor (e.g. a list)
+- **Option**: Type that's empty or contains a value. This is used as an alternative to null/None types which require 
+checking throughout the codebase.
+- **Either**: Type that can contain two types of data.
+- **Try**: Similar to an Either. Used to return either a result or an exception.
+
+**Code example**: [Scala](./src/main/scala/scala_examples/5_functional_programming_concepts.scala)
+
+## 6. Lazy evaluation
+TODO:
+- call by value vs call by name (https://stackoverflow.com/questions/13337338/call-by-name-vs-call-by-value-in-scala-clarification-needed/13337382#13337382)
+
+## 7. Parallel Execution
+The combination of immutability of data and functions as first class citizens makes it relatively easy to distribute 
+workloads across multiple workers. By distributing partitioned data along with the functions to execute on it to various 
+machines, it's relatively simple to parallelize execution. As opposed to having a central mutable object that needs to 
+be accessed from various places which requires concepts like locks.
+Many big data frameworks like Spark and Flink rely on this concept.
+
+
+## 8. Pure Functions
+TODO:
+- No side-effects
+- Separate business logic
+- Improves testability
+
+
+## 9. Theory
+TODO:
+- Functors
+- Monads
+- Category theory
+
+
 ## Resources used
 
 - http://luizsol.com/why-functional-programming/
 - https://www.freecodecamp.org/news/imperative-vs-declarative-programming-difference/
 - https://www.freecodecamp.org/news/learn-the-fundamentals-of-functional-programming/
+- Difference val and def: https://alvinalexander.com/scala/fp-book-diffs-val-def-scala-functions/  
 - Why OOP is bad (or why encapsulation doesn't work): https://www.youtube.com/watch?v=QM1iUe6IofM&ab_channel=BrianWill

@@ -10,7 +10,7 @@ object FunctionalComposition extends App {
 
   // Scala supports compose and andThen to combine functions, the only difference is the order of applying
   val loudGreeting = addGreeting.andThen(toUpperCase)
-  print(loudGreeting("Tom"))
+  println(loudGreeting("Tom"))
 
 
   // --------------------------------- Part 2 - Passing functions around ---------------------------------
