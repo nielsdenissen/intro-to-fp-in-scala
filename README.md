@@ -121,9 +121,12 @@ checking throughout the codebase.
 
 **Code example**: [Scala](./src/main/scala/scala_examples/5_functional_programming_concepts.scala)
 
+
 ## 6. Lazy evaluation
 TODO:
 - call by value vs call by name (https://stackoverflow.com/questions/13337338/call-by-name-vs-call-by-value-in-scala-clarification-needed/13337382#13337382)
+- https://alvinalexander.com/scala/fp-book/how-to-use-by-name-parameters-scala-functions/
+
 
 ## 7. Parallel Execution
 The combination of immutability of data and functions as first class citizens makes it relatively easy to distribute 
@@ -131,6 +134,9 @@ workloads across multiple workers. By distributing partitioned data along with t
 machines, it's relatively simple to parallelize execution. As opposed to having a central mutable object that needs to 
 be accessed from various places which requires concepts like locks.
 Many big data frameworks like Spark and Flink rely on this concept.
+
+### Spark, Scala and Python
+UDF, immutability, interop between python/pandas and scala/spark
 
 
 ## 8. Pure Functions
@@ -154,3 +160,4 @@ TODO:
 - https://www.freecodecamp.org/news/learn-the-fundamentals-of-functional-programming/
 - Difference val and def: https://alvinalexander.com/scala/fp-book-diffs-val-def-scala-functions/  
 - Why OOP is bad (or why encapsulation doesn't work): https://www.youtube.com/watch?v=QM1iUe6IofM&ab_channel=BrianWill
+- Polynote: https://github.com/Vilos92/polynote
