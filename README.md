@@ -161,3 +161,4 @@ TODO:
 - Difference val and def: https://alvinalexander.com/scala/fp-book-diffs-val-def-scala-functions/  
 - Why OOP is bad (or why encapsulation doesn't work): https://www.youtube.com/watch?v=QM1iUe6IofM&ab_channel=BrianWill
 - Polynote: https://github.com/Vilos92/polynote
+- Exercises: https://www.hackerrank.com/domains/fp
