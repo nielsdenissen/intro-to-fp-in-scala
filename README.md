@@ -123,6 +123,9 @@ checking throughout the codebase.
 
 
 ## 6. Lazy evaluation
+
+**Code example**: [Scala](./src/main/scala/scala_examples/6_lazy_evaluation.sc)
+
 TODO:
 - call by value vs call by name (https://stackoverflow.com/questions/13337338/call-by-name-vs-call-by-value-in-scala-clarification-needed/13337382#13337382)
 - https://alvinalexander.com/scala/fp-book/how-to-use-by-name-parameters-scala-functions/
