@@ -12,6 +12,11 @@ these exercises can be found here:
 - Java: `./src/main/java/java_examples/`
 - Scala: `./src/main/scala/scala_examples/`
 
+Furthermore some exercises for FP in Scala are included using Polynote. You can start/stop the polynote server using:
+
+    ./start-polynote.sh
+    ./stop-polynote.sh
+
 Let's start with the most obvious one and work our way towards more specific examples.
 
 
